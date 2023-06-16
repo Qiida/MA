@@ -1,5 +1,5 @@
 # MA
-Master Thesis
+
 
 ## UML Classes.
 ![UML Tracklets](https://github.com/Qiida/MA/assets/27816350/0d713027-f31b-4136-a99c-c5830d016ddf)
