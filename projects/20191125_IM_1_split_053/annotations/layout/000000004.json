@@ -1,0 +1,108 @@
+{
+  "version": "2.0",
+  "schema_ref": "https://darwin-public.s3.eu-west-1.amazonaws.com/darwin_json_2_0.schema.json",
+  "item": {
+    "name": "000000004.png",
+    "path": "/20191125_IM_1_split_053_front.avi",
+    "source_info": {
+      "dataset": {
+        "name": "20191125_IM_1_split_053",
+        "slug": "20191125_im_1_split_053",
+        "dataset_management_url": "https://darwin.v7labs.com/datasets/613754/dataset-management"
+      },
+      "item_id": "01860be5-05dc-5512-ccd4-2a237f0e55a4",
+      "team": {
+        "name": "MA",
+        "slug": "ma"
+      },
+      "workview_url": "https://darwin.v7labs.com/workview?dataset=613754&item=01860be5-05dc-5512-ccd4-2a237f0e55a4"
+    },
+    "slots": [
+      {
+        "type": "image",
+        "slot_name": "0",
+        "width": 800,
+        "height": 600,
+        "thumbnail_url": "https://darwin.v7labs.com/api/v2/teams/ma/files/6010700a-0157-403e-bea3-0f6e434149d2/thumbnail",
+        "source_files": [
+          {
+            "file_name": "000000004.png",
+            "url": "https://darwin.v7labs.com/api/v2/teams/ma/uploads/dd328f23-e233-4f82-a467-5f01f14d7ec0"
+          }
+        ]
+      }
+    ]
+  },
+  "annotations": [
+    {
+      "bounding_box": {
+        "h": 51.170000000000016,
+        "w": 288.70000000000005,
+        "x": 178.02,
+        "y": 364.01
+      },
+      "id": "5e3a6b30-f31f-4c97-9e4e-55c10a3d900b",
+      "name": "Car",
+      "polygon": {
+        "paths": [
+          [
+            {
+              "x": 178.02,
+              "y": 398.68
+            },
+            {
+              "x": 311.86,
+              "y": 415.18
+            },
+            {
+              "x": 466.72,
+              "y": 378.67
+            },
+            {
+              "x": 350.25,
+              "y": 364.01
+            }
+          ]
+        ]
+      },
+      "slot_names": [
+        "0"
+      ]
+    },
+    {
+      "bounding_box": {
+        "h": 12.560000000000002,
+        "w": 152.18999999999994,
+        "x": 593.11,
+        "y": 331.06
+      },
+      "id": "af9fd557-379d-4342-944a-1a6612665d8d",
+      "name": "Car",
+      "polygon": {
+        "paths": [
+          [
+            {
+              "x": 593.11,
+              "y": 338.48
+            },
+            {
+              "x": 661.99,
+              "y": 343.62
+            },
+            {
+              "x": 745.3,
+              "y": 336.26
+            },
+            {
+              "x": 670.44,
+              "y": 331.06
+            }
+          ]
+        ]
+      },
+      "slot_names": [
+        "0"
+      ]
+    }
+  ]
+}
