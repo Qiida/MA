@@ -1,7 +1,7 @@
 import os
 
 import numpy as np
-import pandas as pd
+
 from PIL import Image
 from matplotlib import pyplot as plt
 
@@ -38,9 +38,10 @@ df = ctf.buildDataFrame()
 df = df.filter(
     ["ID", "imageIndex", "overlap", "distance", "k_u0", "k_u1", "k_v0", "k_v1", "y_u0", "y_u1", "y_v0", "y_v1",
      "diff_u0", "diff_u1", "diff_v0", "diff_v1"])
+
 df_grouped = df.groupby(["ID"])
 df_110926_0014_2 = df_grouped.get_group("110926_0014_2")
-# for _, row in df_110926_0014_2.iterrows():
+
 df_110926_0014_2.set_index("imageIndex", inplace=True)
 a = df_110926_0014_2.filter(["distance", "overlap", "diff_u0", "diff_u1", "diff_v0", "diff_v1"])
 for frame in FRAMES:
@@ -55,10 +56,6 @@ for frame in FRAMES:
     y_u1 = row.y_u1
     y_v0 = row.y_v0
     y_v1 = row.y_v1
-
-
-
-
 
     imagePath = os.path.join(ANALYSIS_DIR, DATE, SPLIT, "images", f"{frame:010}.png")
     image = np.asarray(Image.open(imagePath))
@@ -86,4 +83,5 @@ for frame in FRAMES:
     plt.axis("off")
     plt.savefig(f"110926_0014_2_{frame}_boxes.png", bbox_inches="tight", dpi=1000)
     plt.cla()
+
 print("The End.")

@@ -1,5 +1,7 @@
 from src.data.tracklet.combi.CombiTrackletFactory import CombiTrackletFactory
 
+# This script creates and saves CSV files with different Overlap Thresholds.
+
 OVERLAP_THRESHOLDS = [
     0.3,
     # 0.4,
