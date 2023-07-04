@@ -2,7 +2,7 @@ import os
 
 import scipy.io
 
-from src.utils.analysis import buildShortName
+from src.utils.buildShortName import buildShortName
 
 
 class MatlabFile:

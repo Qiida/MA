@@ -57,11 +57,11 @@ for split in SPLITS:
     )
 
 # objectDetectors[0].writeVideo()
-#
-# for tf in trackletFactories:
-#     df = pd.DataFrame(tf.buildDictionary())
-#     df.to_csv(os.path.join(DATE, "csv", f"{tf.name}.csv"), index=False)
-#     print(f"Exported: {tf.name}.csv")
+
+for tf in trackletFactories:
+    df = pd.DataFrame(tf.buildDictionary())
+    df.to_csv(os.path.join(DATE, "csv", f"{tf.name}.csv"), index=False)
+    print(f"Exported: {tf.name}.csv")
 
 for od in objectDetectors:
     df = pd.DataFrame(od.buildDictionary())

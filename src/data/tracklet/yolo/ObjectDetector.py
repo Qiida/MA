@@ -6,9 +6,9 @@ import numpy as np
 import cv2
 from time import time
 
-from src.utils.analysis import buildShortName
 from src.data.tracklet.boxes import YoloBox
 from src.data.tracklet.yolo.YoloObject import YoloObject
+from src.utils.buildShortName import buildShortName
 
 
 def buildDetectedObjectsFromCSV(path):

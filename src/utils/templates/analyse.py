@@ -10,7 +10,7 @@ SPLIT = "2011_09_26_drive_0014_sync"
 
 
 detectedObjects = buildDetectedObjectsFromCSV(
-    os.path.join(DATE, "csv", f"{SPLIT}_YOLO.csv")
+    os.path.join(ANALYSIS_DIR, DATE, "csv", f"{SPLIT}_YOLO.csv")
 )
 
 tf = TrackletFactory(
