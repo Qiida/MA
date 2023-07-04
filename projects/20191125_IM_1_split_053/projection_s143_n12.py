@@ -1,9 +1,5 @@
-import math
 import os
 
-import numpy as np
-import pandas
-import pandas as pd
 
 from src.app.CPointMatcher.CorrespondencePointMatcher import extractPointPairs
 from src.data.lidar.LidarObjectFactory import getLidarObjects
